@@ -37,13 +37,13 @@ class Solution
 
             $median = ($value1 + $value2) / 2;
 
-            echo 'The median is ' . $median;
+            echo 'The median is ' . number_format((float) $median, 2);
 
 
 
         } else {
             $median = ($medianLength + 1) / 2;
-            echo 'The median is ' . $arr[$median - 1];
+            echo 'The median is ' . number_format((float) $arr[$median - 1], 2);
         }
 
 
