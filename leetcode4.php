@@ -41,6 +41,9 @@ class Solution
 
 
 
+        } else {
+            $median = ($medianLength + 1) / 2;
+            echo 'The median is ' . $arr[$median - 1];
         }
 
 
@@ -48,4 +51,4 @@ class Solution
 }
 
 $obj = new Solution();
-$obj->findMedianSortedArrays([1, 9, 6, 4], [7, 5, 3]);
+$obj->findMedianSortedArrays([1, 9, 6, 4], [7, 5, 3, 5]);
