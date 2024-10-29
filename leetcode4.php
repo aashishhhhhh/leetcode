@@ -10,7 +10,6 @@ class Solution
     function findMedianSortedArrays($nums1, $nums2)
     {
         $arr = array_merge($nums1, $nums2);
-        print_r($arr);
 
         // Sorting the array
         for ($i = 0; $i < count(value: $arr); $i++) {
@@ -27,7 +26,6 @@ class Solution
 
             }
         }
-        print_r($arr);
 
 
         $medianLength = count($arr);
