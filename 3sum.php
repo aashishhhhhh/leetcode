@@ -38,17 +38,19 @@ class solution
     public function threeSum($nums)
     {
         $arr = array();
-        $k = 0;
+
+        $k = 1;
+        $j = 2;
         for ($i = 0; $i < count($nums); $i++) {
-            if ($i < count($nums) && $i + 1 < count($nums) && $i + 2 < count($nums)) {
-                $sum = $nums[$i] + $nums[$i + 1] + $nums[$i + 2];
+            while ($k < count($nums) && $j < count(value: $nums)) {
+                $sum = $nums[$i] + $nums[$j] + $nums[$k];
                 if ($sum == 0) {
-                    array_push($arr, $nums[$i], $nums[$i + 1], $nums[$i + 2]);
-                    $k++;
+                    array_push($arr, $nums[$i], $nums[$j], $nums[$k]);
                 }
+                $j++;
+                $k++;
             }
         }
-        print_r($arr);
     }
 }
 
