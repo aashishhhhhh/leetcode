@@ -38,9 +38,11 @@ class solution
     public function threeSum($nums)
     {
         $arr = array();
+        $printArray = array();
 
         $k = 1;
         $j = 2;
+        $l = 0;
         for ($i = 0; $i < count($nums); $i++) {
             while ($k < count($nums) && $j < count(value: $nums)) {
                 $sum = $nums[$i] + $nums[$j] + $nums[$k];
@@ -51,6 +53,8 @@ class solution
                 $k++;
             }
         }
+        print_r($printArray);
+
     }
 }
 
