@@ -35,7 +35,6 @@ class Solution
             }
 
             $value = 0 - implode($newArr);
-            echo $value;
         }
 
         echo $value;
